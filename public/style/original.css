@@ -1,0 +1,574 @@
+content-secthtml, body { height: 100%; }
+
+body { text-align: center; background-color:#0c0c0c;}
+
+ul { list-style-type: none; }
+
+.alert
+{
+    border: 1px solid yellow;
+    padding: 1px;
+}
+.alert a { color: yellow; }
+
+.good
+{
+    color: #90ee90;
+}
+.bad
+{
+    color: red;
+}
+.message
+{
+    border: 1px solid white;
+    padding: 8px;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: left;
+    margin: 15px;
+}
+
+.good .message
+{
+    background-color: green;
+    color: white;
+}
+.bad .message
+{
+    background-color: #400000;
+    color: white;
+}
+
+.errorlist { color: red; }
+ul.errorlist { list-style-type: none; margin: 0; padding: 0; text-align: center;}
+
+.advice-message { color: #FF9933; }
+
+.warning, .error { color: red; }
+
+.button-panel { text-align: center; }
+input.quantity { width: 4em; }
+
+#container { margin-top: 2em; }
+
+/* KINGDOM SELECT */
+table#change-kingdom
+{
+	margin-left: auto;
+	margin-right: auto;
+    width: 400px;
+    border: 2px solid #C0C0C0;
+}
+table#change-kingdom thead th { background-color: #400000; text-align: center;}
+#change-kingdom .kingdom_num, #change-kingdom .island_num { width: 30px; }
+
+/* ANY LIST OF URLS */
+ul.url-list
+{
+    list-style-type: none; margin: 0; padding: 0;
+}
+
+ul.url-list li
+{
+    float: left;
+    margin-right: 8px;
+}
+
+h1 { margin-bottom: 5px; }
+
+
+/* MAIN NAVIGATION BAR */
+
+#navigation li
+{
+    list-style-type: none;
+}
+
+#navigation
+{
+    /*position: fixed;*/
+    /*top: 10px;*/
+    background-position: 5px 5px;
+    border: none;
+    margin: 0px;
+}
+
+#navigation ul
+{
+    text-align: left;
+    margin: 0px 0px 0px 15px;
+    margin-bottom: 10px;
+}
+
+#navigation ul.level2 { margin-bottom: 0px; }
+
+#navigation li
+{
+    margin-top: 2px;
+}
+#navigation a
+{
+    color: white;
+}
+
+#navigation ul {
+    margin-left: 0;
+    text-align: left;
+}
+
+#navigation ul.level2 { margin-left: 1.5em; }
+
+/* RESOURCE BAR */
+table#resource-bar
+{
+	margin-left: auto;
+	margin-right: auto;
+    margin-top: 0px;
+    border-collapse: separate;
+    border-spacing: 3px 3px;
+    width: 600px
+}
+table#resource-bar th { background-color: #400000; }
+table#resource-bar td { background-color: #1A1A1A; }
+table#resource-bar tbody td { text-align: right; }
+table#resource-bar tbody th { text-align: right; font-weight: normal; }
+.positive { color: green; }
+.negative { color: red; }
+
+/* A CENTERED BLOCK IN THE PAGE CONTENT */
+.content-section
+{
+    text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* DEFAULT TABLE STYLES */
+table tbody tr.odd td, table tbody tr.odd th { background-color: #1A1A1A; }
+table tbody tr.even td, table tbody tr.even th { background-color: transparent; }
+table thead th, thead td { background-color: #000040; }
+table thead th, table thead td { text-align: center; }
+table.data tbody th {
+    text-align: left;
+    color: #B0B0B0;
+}
+table.data tbody td { text-align: right; }
+table.data tbody tr.sub-total { background-color: #2b2b2b }
+table.data {
+    border-collapse: separate;
+    border-spacing: 3px 3px;
+}
+table.form tbody th { text-align: right; }
+table.form tbody td { text-align: left; }
+
+/* Main style for centered statistics tables. */
+.statistics
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+}
+
+/* THRONE */
+table#throne-game-message { border: 1px solid #404060; }
+table#throne-monarch-message { border: 1px solid #404060; }
+table#throne-monarch-message thead tr th { background-color: #400000; }
+
+table#throne-statistics {  }
+table#throne-statistics { border: 1px solid #404060; }
+table#throne-statistics tbody td { text-align: right; }
+table#throne-statistics tbody th.col1 { width: 20%; }
+table#throne-statistics tbody th.col2 { width: 40%; }
+table#throne-statistics tbody th.col3 { width: 20%; }
+table#throne-statistics tbody td.col4 { width: 20%; }
+#throne-messages tr { margin-bottom: 15px; }
+
+/* COUNCIL PAGES */
+#council-state-current-statistics {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+#council-state-population {
+    width: 33%;
+    float: left;
+}
+#council-state-economy {
+    width: 33%;
+    float: left;
+}
+#council-state-highlights {
+    width: 33%;
+    float: left;
+}
+table#council-state-net-change { width: 100%; }
+table#council-internal-build-effects { width: 100%; }
+#council-internal-statistics { width: 400px; }
+#council-internal-statistics tbody th { width: 350px; }
+#council-internal-build-schedule tbody th { width: 200px; }
+table#council-learn-effects { width: 100%; }
+table.schedule { width: 100%; font-size:0.8em; }
+table.schedule td { padding: 0; margin: 0; }
+table#council-mystics-effects tbody th { font-weight: bold; }
+
+
+ /* BUILD & RAZE */
+#build-statistics, #raze-statistics { width: 400px; }
+#build-buildings {  }
+#build-buildings tbody th, #raze-buildings tbody th { width: 160px; }
+table#build-buildings thead tr th { background-color: #400000}
+
+/* SCIENCES */
+table#learn-statistics { width: 450px; }
+table#learn-statistics tbody th { width: 200px; }
+table#learn-research-rate thead th { background-color: #400000; }
+table#learn-research-effects thead th { background-color: #400000; }
+
+/* TRAIN ARMY */
+table#train-army-draft-rate thead th { background-color: #400000; }
+table#train-army-training thead th { background-color: #400000; }
+
+/* TRAIN WIZARDS */
+#train-wizards-statistics { width: 350px; }
+#train-wizards-actively-training ul { list-style-type: none; margin: 0; padding: 0; padding-left: 200px;}
+
+/* MYSTICS */
+#combat-spells-statistics { width: 300px; }
+#combat-spells-select th, #reflexive-spells-select th { width: 200px; }
+
+/* THIEVERY */
+#thievery-statistics { width: 400px; }
+
+/* AID */
+#aid-trade-blockade ul { list-style-type: none; margin: 0; padding: 0px 0px 0px 200px; margin-bottom: 10px; }
+#aid-form table
+{
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* DRAGON */
+#fund-dragon { width: 400px; }
+
+/* SEND ARMIES */
+#send-armies-form table
+{
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* MAILBOX */
+.formatted-text { background-color: #2b3849; }
+table.mailbox { width: 100%; }
+
+/* FORUM */
+table.forum-topic-list { border-spacing: 0;}
+table.forum-post-list { background-color: #2b3849; border-spacing: 0;  border-collapse: collapse;}
+table.forum-topic-list tbody td, table.forum-post-list tbody td { text-align: left; }
+table.forum-post-list .col1 { width: 140px; background-color: #000040}
+table.forum-new-topic input.subject { width: 500px; }
+
+/* NEWS */
+#news { width: 100%; }
+#news thead { text-align: center; }
+.next-prev-nav {
+    position: relative;
+    text-align: center;
+}
+.next-prev-nav .previous {
+    position: absolute;
+    left: 0px;
+}
+.next-prev-nav .next {
+    position: absolute;
+    right: 0px;
+}
+.news-incident-type {
+    text-align: center;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+}
+.news-incident-date { width: 120px; }
+
+/* KINGDOM NEWS */
+#kingdom-news-legend {
+    width: 450px;
+    text-align: center;
+}
+#kingdom-news-legend .col2 { text-align: left; }
+#kingdom-news-legend .col3 { text-align: right; }
+.news-intra-kingdom-conflict { background-image:url(/media/game/images/kingdom_news/intra_kingdom_conflict.png); }
+.news-actions-against-our-kingdom { background-image:url(/media/game/images/kingdom_news/actions_against_our_kingdom.png); }
+.news-actions-by-our-kingdom { background-image:url(/media/game/images/kingdom_news/actions_by_our_kingdom.png); }
+.news-dragon { background-image:url(/media/game/images/kingdom_news/dragon.png); }
+.news-obituaries { background-image:url(/media/game/images/kingdom_news/obituaries.png); }
+.news-relations { background-image:url(/media/game/images/kingdom_news/relations.png); }
+.news-aid { background-image:url(/media/game/images/kingdom_news/aid.png); }
+.news-province-modification { background-image:url(/media/game/images/kingdom_news/province-modification.png); }
+
+/* INVITATIONS */
+#invitations-invitee
+{
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#invitations-invitation-type
+{
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+table#invitations-invitee .col1 { width: 250px; }
+table#invitations-invitation-type .col1 { width: 250px; }
+
+.invitations-buy {
+	text-align: center;
+}
+
+/* VOTING */
+table#vote-standings { width: 100%; }
+table#vote-standings tbody th { width: 50%; }
+
+/* WAR */
+#war-diplomatic-options ul { list-style-type: none; margin: 0; padding: 0; }
+#war-outstanding-peace-proposal { width: 250px; }
+#war-incoming-peace-proposal ul { list-style-type: none; margin: 0; padding: 0; }
+
+/* KINGDOM DETAILS */
+.protected { color: #99ffbb; }
+.monarch { color: #ffaaaa; }
+.you { font-weight: bold; }
+#kingdom-details-statistics { width: 450px; }
+#kingdom-details-warfare { width: 450px; }
+#kingdom-details-legend { width: 150px; }
+#kingdom-details-legend td { text-align: center; }
+#kingdom-details-provinces .province-name { text-align: left; }
+
+/* MONARCHY */
+#monarchy-form td
+{
+	vertical-align: top;
+	padding-bottom: 20px;
+}
+
+/* RANKINGS */
+#ranking-table { width: 100%; }
+#ranking-table tbody th { text-align: right; font-weight: bold; background-color: #000040; }
+#ranking-top-provinces { border: 1px solid #000040; }
+
+/* GAME PREFERENCES */
+.preference-box {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 7px;
+    background-color: #400000;
+    width: 400px;
+    margin-left: auto;
+	margin-right: auto;
+}
+.disabled { background-color: #444444; }
+#game-pref-vacation-form { width: 300px; }
+#game-pref-sitting-form { width: 300px; }
+#game-pref-abandon-form { width: 400px; }
+#game-pref-random-move-form { width: 300px; }
+#game-pref-stay-form { width: 350px; }
+
+.invitation { border: 1px solid #404060; padding: 5px; }
+.invitation h3 { text-align: center; background-color: #000040}
+
+/* ADS */
+#leaderboard-ad
+{
+    margin: 0 auto;
+    width: 730px;
+}
+#skyscraper-ad
+{
+    position: absolute;
+    right: 0px;
+    top: 200px;
+}
+#footer-ad {
+    margin: 20px auto 0 auto;
+    width: 728px;
+}
+
+/*  Style the input control background similarly to the background color
+    used when the message is displayed. */
+.editor input, .editor textarea {
+    background-color: #2B3849;
+    color: #FFFFFF;
+}
+
+/*
+ * Chatter panel styles follow
+ */
+
+#chatter-box {
+    position: fixed;
+	 top: 0px;
+	 left: 0px;
+	 width: 100%;
+	 color: #4eff00;
+	 background: #333333;
+	 outline: 1px solid #000;
+	 font-family: monospace;
+	 font-size: 14px;
+	 padding-right: 10px;
+	 text-align: left;
+	 z-index: 1000;
+}
+
+#chat-content {
+	 overflow: auto;
+	 padding-left: 10px;
+	 padding-right: 20px;
+}
+
+.chat-line-sender {
+	 font-weight: bold;
+}
+
+.chat-error {
+	 color: #ff0000;
+}
+
+#chat-submit {
+	 height: 32px;
+	 width: 100%;
+	 margin-bottom: -7px;
+}
+
+#chat-submit-table {
+	 height: 32px;
+	 width: 100%;
+	 margin: 0 0 0 10px;
+}
+
+#chat-submit-input-head {
+	 padding: 0;
+	 height: 32px;
+	 line-height: 32px;
+	 vertical-align: middle;
+	 padding-right: 20px;
+	 white-space: nowrap;
+}
+
+#chat-submit-input-cell {
+	 width: 100%;
+	 padding: 0;
+	 height: 32px;
+	 line-height: 32px;
+	 vertical-align: middle;
+}
+
+#chat-submit-input-cell-input {
+	 width: 70%;
+	 height: 32px;
+	 /*float: left;*/
+}
+
+#chat-submit-controls {
+	 padding-right: 20px;
+	 text-align: right;
+	 height: 32px;
+	 vertical-align: middle;
+	 display: table-cell;
+	 width: 50px;
+	 float: right;
+	 line-height: 32px;
+}
+
+#chat-submit-line {
+	 height: 32px;
+	 width: 100%;
+	 color: #4eff00;
+	 font-family: monospace;
+	 font-size: 14px;
+	 border-style: none;
+	 padding: 0;
+	 background: none;
+}
+
+.chat-submit-control, .chat-submit-control:hover, .chat-submit-control:active, .chat-submit-control:link, .chat-submit-control:visited {
+	 color: #4eff00;
+	 font-weight: bold;
+	 font-family: sans-serif;
+}
+
+.chat-submit-gradient {
+/* thanks to http://blog.fakedarren.com/2010/01/cross-browser-css-gradients/ */
+/* and http://www.puremango.co.uk/2010/04/css-gradient/ */
+    /* fallback (Opera) */
+    background: #333333;
+    /* Mozilla: */
+    background: -moz-linear-gradient(top, #222222, #333333);
+    /* Chrome, Safari:*/
+    background: -webkit-gradient(linear,
+                left top, left bottom, from(#222222), to(#333333));
+    /* MSIE */
+    filter: progid:DXImageTransform.Microsoft.Gradient(
+                StartColorStr='#222222', EndColorStr='#333333', GradientType=0);
+  }
+
+.meter-container
+{
+	height: 30px;
+	width: 415px;
+	position: relative;
+}
+.dip-status
+{
+	height: 14px;
+	position: absolute;
+	/* allow some margin-left so that the pointers align with 0 on the meter */
+    margin-left: 7px;
+    font-size: 10px;
+    color: #000;
+    text-align: center;
+    top: 10px;
+}
+
+.dip-status-NORMAL
+{
+	background-color: #01DF01;
+}
+
+.dip-status-UNFRIENDLY
+{
+	background-color: #FFBF00;	
+}
+
+.dip-status-HOSTILE
+{
+    background-color:#FF4000;
+    
+    background-image: url(../images/hostile_meter/hostile_gradient.png);
+    background-repeat:repeat-y;
+}
+
+.dip-status-WAR
+{
+    background-color: #FF0000;  
+    margin-left: 10px;
+}
+
+.meter-value
+{
+    position: absolute;
+}
+
+.own-meter-value
+{	
+    bottom: -11px;
+}
+
+.their-meter-value
+{
+    top: -4px; 
+}

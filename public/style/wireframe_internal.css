@@ -1,0 +1,100 @@
+div.container { 
+	width: 940px;
+	margin: 10px auto; /* this margin means the div is center aligned and 10px from the very top */
+	background: black;
+	padding:10px 10px; /* this padding is short hand for padding-top:10px; padding-right:10px; padding-left:10px; padding-bottom:10px; */}
+
+div.holder { 
+	float:left;
+	width: 940px;	/* Due to the fact that the main container is 940px with padding left and right of 10px (=20px) it means true width of container is 960px (940px+20px) */}
+
+div.end-float {clear:both; width:940px;}
+
+div.foot-links {  margin: 0 auto; width:940px; text-align:center;}
+
+/* @group Col1 */
+
+div.header {
+    background: url(/media/common/images/utopia_logo_small_tl.png) no-repeat top left;
+    float:left; 
+    width:940px;}
+
+div.left-box {
+float:left; 
+width:90px;
+margin-top:10px; /* this gives us space between this div and the header - alternate shorthand = margin:10px 0px 0px 0px (top, right, down, left) */}
+
+div.middle-box {
+background: url(/media/common/images/bk.jpg) no-repeat center 180px;
+float:left; 
+width:710px;
+min-height: 650px;
+margin:10px 0px 0px 10px; /* this gives us space between this div and the header and also the left div - alternate shorthand = margin:10px 0px 0px 10px (top, right, down, left) */
+display:inline; /* I am using floating method in this example so for IE6 and 7 we need to put display:inline; when you have a margin on a float */
+}
+
+/* for purpose of this example I am just using whatever values that come to mind - usually a designer will work within a 960 grid and work from that 
+so because I have given values above of 190 and 500 I will be able to get my value for the remaining div - right-box
+190px + 500px = 690px + 10px margin on middle-div + 10px margin on right-div = 710px - 940px (overall) = 230px = right div width */
+
+div.right-box {
+float:left; 
+width:120px; /* we found this width above and now it changes to 210px as I have added padding to both sides left and right of 10px so 210px + 10px +10px = 230px */
+padding: 0px 0px 0px 0px;
+margin:10px 0px 0px 10px; /* this gives us space between this div and the header and also the left div - alternate shorthand = margin:10px 0px 0px 10px (top, right, down, left) */
+display:inline; /* I am using floating method in this example so for IE6 and 7 we need to put display:inline; when you have a margin on a float */
+}
+
+/* As you can see if you view in browser the content laid out in right-box is a lot nicer than middle-box due to padding added */
+
+div.right-box h1 { font-family:"Georgia"; font-size:22px; color: #666;}
+div.right-box p { font-family:"Tahoma"; font-size:12px; color: #666;}
+
+
+/* HEADER COMPONENTS */
+.header-left
+{
+    float: left;
+    text-align: left;
+    width: 180px;
+}
+.header-top-left 
+{
+    height: 90px;
+}
+.header-bottom-left 
+{
+    clear: left;
+}
+
+.header-right
+{
+    float: right;
+    text-align: right;
+}
+.header-top-right 
+{
+    
+}
+.header-bottom-right 
+{
+    clear:right;
+}
+
+#header-version
+{	font-size: 0.8em;
+    text-align: left;
+}
+
+#header-account-links
+{	line-height: 1.3em;
+}
+
+#header-email-verification
+{
+	font-size: 0.8em;
+}
+
+#header-game-links 
+{
+}

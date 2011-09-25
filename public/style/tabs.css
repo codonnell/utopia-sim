@@ -1,0 +1,85 @@
+#tabbed_menu
+{
+    float:left;
+    line-height:normal;
+}
+#tabbed_menu ul 
+{
+    margin:0;
+    padding:10px 10px 0 50px;
+    list-style:none;
+}
+#tabbed_menu li 
+{
+    display:inline;
+    margin:0;
+    padding:0;
+}
+#tabbed_menu a 
+{
+    float:left;
+    background:url("/media/game/images/tableft.png") no-repeat left top;
+    margin:0;
+    padding:0 0 0 8px;
+    text-decoration:none;
+}
+#tabbed_menu a span 
+{
+    float:left;
+    display:block;
+    background:url("/media/game/images/tabright.png") no-repeat right top;
+    padding:5px 15px 8px 6px;
+    color:#BDBDBD;
+}
+
+#tabbed_menu a.tab_focused
+{
+    float:left;
+    background:url("/media/game/images/tableft_focused.png") no-repeat left top;
+    margin:0;
+    padding:0 0 0 8px;
+    text-decoration:none;
+}
+#tabbed_menu a span.tab_focused
+{
+    float:left;
+    display:block;
+    background:url("/media/game/images/tabright_focused.png") no-repeat right top;
+    padding:5px 15px 8px 8px;
+    color:#FFF;
+}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#tabbed_menu a span {   float:none;   }
+
+/* End IE5-Mac hack */
+#tabbed_menu a:hover span 
+{
+    color:#FFF;
+}
+#tabbed_menu a:hover 
+{
+    background-position:0% -42px;
+}
+#tabbed_menu a:hover span 
+{
+    background-position:100% -42px;
+}
+
+#tabbed_panel
+{
+    clear: left;
+    border-width: 3px;
+    border-style: ridge;
+    border-color: #3b4041;	margin-left: 10px;
+	margin-right: 10px;	padding: 10px;
+}
+
+
+
+
+
+
+
+
+
